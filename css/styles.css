@@ -39,6 +39,63 @@ header {
 body {
   background-color: #f2f2f2; }
 
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.titulos {
+  font-size: 2.7rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  color: #030f59; }
+
+.containerGuitarras {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .containerGuitarras .categoria {
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    color: #030f59; }
+  .containerGuitarras #productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .containerGuitarras #productos .card {
+      max-width: 300px;
+      padding: 20px;
+      margin: 15px;
+      text-align: center;
+      border-radius: 10px; }
+      .containerGuitarras #productos .card h3 {
+        font-weight: 600; }
+      .containerGuitarras #productos .card h5 {
+        font-weight: 600;
+        margin-bottom: 0.8rem; }
+      .containerGuitarras #productos .card p {
+        margin-bottom: 0.4rem; }
+      .containerGuitarras #productos .card button {
+        border-radius: 5px;
+        border-color: transparent;
+        background-color: #030f59;
+        color: #ffffff;
+        max-width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2px 8px 2px 8px; }
+      .containerGuitarras #productos .card button:hover {
+        border-color: transparent;
+        background-color: #f24405;
+        color: #ffffff;
+        transition: 0.7s; }
+    .containerGuitarras #productos .guitarras {
+      max-width: 250px; }
+
+/*SLIDE*/
 .carousel-caption {
   position: absolute;
   top: 15%; }
@@ -47,28 +104,6 @@ body {
     font-weight: 600; }
   .carousel-caption p {
     font-size: 1.1rem; }
-
-.titulos {
-  font-size: 2.7rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 20px 0px 20px 0px;
-  color: #2c3d73; }
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.card {
-  max-width: 300px;
-  padding: 20px;
-  text-align: center; }
-
-#productos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
 
 #formulario {
   max-width: 600px;

@@ -1,11 +1,9 @@
 // EVENTO FORM
 
+const form = document.querySelector('#formulario')
 const inputNombre = document.querySelector('#input-nombre')
 const inputApellido = document.querySelector('#input-apellido')
 const inputMail = document.querySelector('#input-mail')
-const form = document.querySelector('#formulario')
-
-const usersList = document.querySelector('#usuarios')
 
 const baseDeDatos = []
 
@@ -17,7 +15,7 @@ form.addEventListener('submit', (event) => {
     const mail = inputMail.value
 
     if (nombre.length < 5 || apellido.length < 5 || mail.length < 5) {
-        alert("DATOS INVALIDOS")
+        alert("Datos inválidos")
         return
     }
 
@@ -28,6 +26,8 @@ form.addEventListener('submit', (event) => {
     }
 
     baseDeDatos.push(user)
+
+    localStorage.setItem("Clientes", JSON.stringify(baseDeDatos))
 
     console.log(baseDeDatos)
 
