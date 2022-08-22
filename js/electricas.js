@@ -29,6 +29,9 @@ electricas.push(new guitarra(60,"../src/img/60.jpg","Cort", "M Custom", 370800, 
 electricas.push(new guitarra(22,"../src/img/22.jpg","Cort", "Sunset 2", 170700, "Caoba", "Rojo"));
 electricas.push(new guitarra(43,"../src/img/43.jpg","Hagstrom", "Retroscape Impala", 250600, "Caoba", "Negro"));
 
+// OPERADORES Y CONDICIONALES AVANZADOS - LO VOY A USAR A FUTURO PARA HACER UN FILTRO DE BÚSQUEDA POR MARCA Y PRECIO
+const { marca, precio } = guitarra
+
 //DOM
 
 const section = document.querySelector("#productos")

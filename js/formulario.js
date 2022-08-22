@@ -15,8 +15,8 @@ form.addEventListener('submit', (event) => {
     const mail = inputMail.value
 
     if (nombre.length < 5 || apellido.length < 5 || mail.length < 5) {
-        alert("Datos inválidos")
-        return
+    alert("Datos inválidos")
+     return
     }
 
     const user = {
@@ -29,7 +29,8 @@ form.addEventListener('submit', (event) => {
 
     localStorage.setItem("Clientes", JSON.stringify(baseDeDatos))
 
-    console.log(baseDeDatos)
+    // OPERADORES Y CONDICIONALES AVANZADOS
+    console.log(...baseDeDatos)
 
     form.reset()
 })
