@@ -1,5 +1,11 @@
 // EVENTO FORM
-
+Swal.fire({
+    title: 'Error!',
+    text: 'Do you want to continue',
+    icon: 'error',
+    confirmButtonText: 'Cool'
+  })
+  
 const form = document.querySelector('#formulario')
 const inputNombre = document.querySelector('#input-nombre')
 const inputApellido = document.querySelector('#input-apellido')
@@ -15,7 +21,7 @@ form.addEventListener('submit', (event) => {
     const mail = inputMail.value
 
     if (nombre.length < 5 || apellido.length < 5 || mail.length < 5) {
-    alert("Datos inválidos")
+    Swal.fire("Datos inválidos.")
      return
     }
 
