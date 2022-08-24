@@ -1,10 +1,4 @@
 // EVENTO FORM
-Swal.fire({
-    title: 'Error!',
-    text: 'Do you want to continue',
-    icon: 'error',
-    confirmButtonText: 'Cool'
-  })
   
 const form = document.querySelector('#formulario')
 const inputNombre = document.querySelector('#input-nombre')
@@ -32,6 +26,12 @@ form.addEventListener('submit', (event) => {
     }
 
     baseDeDatos.push(user)
+
+    Swal.fire(
+        '¡Datos ingresados!',
+        'Gracias por ser parte de nuestra comunidad.',
+        'success',
+      )
 
     localStorage.setItem("Clientes", JSON.stringify(baseDeDatos))
 
