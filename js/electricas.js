@@ -32,7 +32,7 @@ electricas.push(new guitarra(43,"../src/img/43.jpg","Hagstrom", "Retroscape Impa
 // OPERADORES Y CONDICIONALES AVANZADOS - LO VOY A USAR A FUTURO PARA HACER UN FILTRO DE BÚSQUEDA POR MARCA Y PRECIO
 const { marca, precio } = guitarra
 
-//DOM
+// DOM
 
 const section = document.querySelector("#productos")
 
@@ -50,7 +50,7 @@ electricas.forEach((par) => {
     section.appendChild(cardClonada)
 })
 
-//boton
+// BOTÓN
 
 const btnComprar = document.querySelector(".btn-comprar")
 
