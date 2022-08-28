@@ -38,12 +38,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="pages/acusticas.html">ACÚSTICAS</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/electroacusticas.html">ELECTROACÚSTICAS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
-              </li>
             </ul>
             <a class="navbar-brand" href="pages/carrito.html"><img id="carrito" src="src/img/carrito.png" alt="carrito"></a>
             <form>
@@ -121,8 +115,55 @@
       </section>
     </div>
 
+    <footer class="py-5">
+      <div id="conteinerFooter">
+        <div class="row">
+          <div class="col-2">
+            <h5>Sweep Picking</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="pages/electricas.html" class="nav-link p-0 text-muted">Eléctricas</a></li>
+              <li class="nav-item mb-2"><a href="pages/criollas.html" class="nav-link p-0 text-muted">Criollas</a></li>
+              <li class="nav-item mb-2"><a href="pages/acusticas.html" class="nav-link p-0 text-muted">Acústicas</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-2">
+            <h5>¿Dónde encontrarnos?</h5>
+            <p>Beruti 168 - Bahía Blanca <br>+ 54 291 485 7869 <br>+ 54 291 443 8192</p>
+          </div>
+
+          <div class="col-2">
+            <h5>Medios de pago</h5>
+            <img src="src/img/pagos.png" alt="" id="pagos">
+          </div>
+    
+          <div class="col-4 offset-1">
+            <form id="formulario">
+              <h5>Subscribite a nuestra base de datos.</h5>
+              <p>Recibí las mejores ofertas y novedades de nuestro local.</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email">
+                <button id="btn-subscripcion" class="btn btn-primary" type="submit">Subscribirme</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <p>© 2022 Sweep Picking. Todos los derechos reservados.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><img class="icono" src="src/img/fb.png" alt="facebook"></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><img class="icono" src="src/img/ig.png" alt="instagram"></a></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><img class="icono" src="src/img/tw.png" alt="twitter"></a></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/ofertas.js"></script>
+    <script src="js/formulario.js"></script>
     <script src="js/carrito.js"></script>
   </body>
   

@@ -2,6 +2,7 @@
 @import "./responsive";
 @import "./contacto";
 @import "./inicio";
+@import "./footer";
 
 /*GENERAL*/
 
@@ -89,32 +90,5 @@ body{
         .guitarras{
             max-width: 250px;
         }
-        
     }
 }
-
-/*SLIDE*/
-
-.carousel-caption {
-    position: absolute;
-    top: 15%;
-
-    h1{
-        font-size: 2.2rem;
-        font-weight: 600;
-    }
-
-    p{
-        font-size: 1.1rem;
-    }
-}
-
-
-
-
-#formulario{
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-

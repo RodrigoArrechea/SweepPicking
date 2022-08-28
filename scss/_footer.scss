@@ -1,0 +1,55 @@
+/*FOOTER*/
+
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dfdfdf;
+    justify-content: center;
+
+    #conteinerFooter{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+        .col-2 {
+            min-width: 230px;
+            padding: 30px,10px,30px,10px;
+        }
+
+        #pagos{
+            max-width: 230px;
+            width: 100%;
+        }
+
+        .col-4{
+            max-width: 350px;
+            right: 0;
+        }
+
+        .py-5 {
+            padding-bottom: 0px;
+        }
+
+        .icono{
+            width: 35px;
+        }
+
+        .icono:hover{
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+
+        #btn-subscripcion{
+            background-color: #f24405;
+            border-color: transparent;
+        }
+
+        #btn-subscripcion:hover {
+            background-color: #f1836a;
+            border-color: transparent;
+            transition: 0.5s;
+        }
+    }    
+}

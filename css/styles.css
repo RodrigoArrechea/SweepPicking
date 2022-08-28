@@ -34,6 +34,11 @@ header {
 h2 {
   text-align: center; }
 
+#formulario {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto; }
+
 #btn-form {
   background-color: #f24405;
   border-color: transparent;
@@ -53,6 +58,51 @@ h2 {
     background-color: #f24405; }
 
 /*INICIO*/
+.carousel-caption {
+  position: absolute;
+  top: 15%; }
+  .carousel-caption h1 {
+    font-size: 2.2rem;
+    font-weight: 600; }
+  .carousel-caption p {
+    font-size: 1.1rem; }
+
+/*FOOTER*/
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dfdfdf;
+  justify-content: center; }
+  footer #conteinerFooter {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-right: 20px;
+    padding-left: 20px; }
+    footer #conteinerFooter .col-2 {
+      min-width: 230px;
+      padding: 30px,10px,30px,10px; }
+    footer #conteinerFooter #pagos {
+      max-width: 230px;
+      width: 100%; }
+    footer #conteinerFooter .col-4 {
+      max-width: 350px;
+      right: 0; }
+    footer #conteinerFooter .py-5 {
+      padding-bottom: 0px; }
+    footer #conteinerFooter .icono {
+      width: 35px; }
+    footer #conteinerFooter .icono:hover {
+      opacity: 0.7;
+      transition: 0.5s; }
+    footer #conteinerFooter #btn-subscripcion {
+      background-color: #f24405;
+      border-color: transparent; }
+    footer #conteinerFooter #btn-subscripcion:hover {
+      background-color: #f1836a;
+      border-color: transparent;
+      transition: 0.5s; }
+
 /*GENERAL*/
 * {
   margin: 0;
@@ -117,18 +167,3 @@ body {
         transition: 0.7s; }
     .containerGuitarras #productos .guitarras {
       max-width: 250px; }
-
-/*SLIDE*/
-.carousel-caption {
-  position: absolute;
-  top: 15%; }
-  .carousel-caption h1 {
-    font-size: 2.2rem;
-    font-weight: 600; }
-  .carousel-caption p {
-    font-size: 1.1rem; }
-
-#formulario {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto; }
