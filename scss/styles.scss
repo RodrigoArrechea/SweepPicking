@@ -1,7 +1,6 @@
 @import "./header";
 @import "./responsive";
-@import "./contacto";
-@import "./inicio";
+@import "./slide";
 @import "./footer";
 
 /*GENERAL*/
@@ -66,6 +65,13 @@ body{
             .precioOferta{
                 color:#07a101;
                 font-weight: 700;
+                font-size: 1.3rem;
+            }
+
+            .precioOriginal{
+                text-decoration: line-through;
+                color: #e90d0d;
+                font-weight: 600;
             }
         
             button{

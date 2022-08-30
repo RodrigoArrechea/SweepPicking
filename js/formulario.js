@@ -11,7 +11,7 @@ form.addEventListener('submit', (event) => {
     const mail = inputMail.value
 
     if (mail.length < 5) {
-    Swal.fire("Datos inválidos.")
+    Swal.fire("Email inválido.")
      return
     }
 
@@ -22,7 +22,7 @@ form.addEventListener('submit', (event) => {
     baseDeDatos.push(user)
 
     Swal.fire(
-        '¡Datos ingresados!',
+        '¡Email ingresado!',
         'Gracias por ser parte de nuestra comunidad.',
         'success',
       )

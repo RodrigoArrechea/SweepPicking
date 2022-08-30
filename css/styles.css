@@ -30,33 +30,6 @@ header {
   header .form-control {
     font-size: 0.8rem; }
 
-/*CONTACTO*/
-h2 {
-  text-align: center; }
-
-#formulario {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto; }
-
-#btn-form {
-  background-color: #f24405;
-  border-color: transparent;
-  width: 100%; }
-
-.btn-form:hover {
-  color: #fff;
-  background-color: #f1836a;
-  border-color: transparent;
-  transition: 0.5s; }
-
-.swal2-popup {
-  background: #2c3d73;
-  border-radius: 10px;
-  color: #f2f2f2; }
-  .swal2-popup .swal2-styled.swal2-confirm {
-    background-color: #f24405; }
-
 /*INICIO*/
 .carousel-caption {
   position: absolute;
@@ -102,6 +75,13 @@ footer {
       background-color: #f1836a;
       border-color: transparent;
       transition: 0.5s; }
+
+.swal2-popup {
+  background: #2c3d73;
+  border-radius: 10px;
+  color: #f2f2f2; }
+  .swal2-popup .swal2-styled.swal2-confirm {
+    background-color: #f24405; }
 
 /*GENERAL*/
 * {
@@ -149,7 +129,12 @@ body {
         margin-bottom: 0.4rem; }
       .containerGuitarras #productos .card .precioOferta {
         color: #07a101;
-        font-weight: 700; }
+        font-weight: 700;
+        font-size: 1.3rem; }
+      .containerGuitarras #productos .card .precioOriginal {
+        text-decoration: line-through;
+        color: #e90d0d;
+        font-weight: 600; }
       .containerGuitarras #productos .card button {
         border-radius: 5px;
         border-color: transparent;
