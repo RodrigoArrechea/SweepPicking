@@ -3,7 +3,7 @@ const ofertas = document.querySelector("#productos")
 const temp = document.querySelector("template")
 const card = temp.content.querySelector("div")
 
-fetch("../data.json")
+fetch("./data.json")
     .then( (res) => res.json())
     .then( (data) => {
 
