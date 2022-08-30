@@ -1,4 +1,4 @@
-const ofertas = document.querySelector("#productosEnOferta")
+const ofertas = document.querySelector("#productos")
 
 const temp = document.querySelector("template")
 const card = temp.content.querySelector("div")

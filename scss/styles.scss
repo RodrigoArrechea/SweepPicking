@@ -3,7 +3,6 @@
 @import "./contacto";
 @import "./inicio";
 @import "./footer";
-@import "./ofertas";
 
 /*GENERAL*/
 
@@ -15,12 +14,6 @@
 
 body{
     background-color: #f2f2f2;
-}
-
-.container{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .titulos{
@@ -35,6 +28,7 @@ body{
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin: 25px auto 50px auto;
 
     .categoria{
         font-size: 2.7rem;
@@ -67,6 +61,11 @@ body{
         
             p{
                 margin-bottom: 0.4rem;
+            }
+
+            .precioOferta{
+                color:#07a101;
+                font-weight: 700;
             }
         
             button{
