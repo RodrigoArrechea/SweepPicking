@@ -1,51 +1,51 @@
 [{
     "id": "37",
-    "img": "/src/img/1.jpg",
-    "marca": "marca",
-    "modelo": "modelo",
-    "precioOriginal": 120000,
-    "precioOferta": 120000,
-    "material": "material",
-    "color": "color"
+    "img": "/src/img/37.jpg",
+    "marca": "Fender",
+    "modelo": "Coronado",
+    "precioOriginal": 330800,
+    "precioOferta": 264700,
+    "material": "Arce",
+    "color": "3-Color sunburst"
 },
 {
     "id": "38",
-    "img": "/src/img/1.jpg",
-    "marca": "marca",
-    "modelo": "modelo",
-    "precioOriginal": 120000,
-    "precioOferta": 120000,
-    "material": "material",
-    "color": "color"
+    "img": "/src/img/38.jpg",
+    "marca": "Ibanez",
+    "modelo": "GRX70QA",
+    "precioOriginal": 91700,
+    "precioOferta": 77900,
+    "material": "Maple",
+    "color": "Rojo"
 },
 {
     "id": "39",
-    "img": "/src/img/1.jpg",
-    "marca": "marca",
-    "modelo": "modelo",
-    "precioOriginal": 120000,
-    "precioOferta": 120000,
-    "material": "material",
-    "color": "color"
+    "img": "/src/img/39.jpg",
+    "marca": "Joaquin Torralba",
+    "modelo": "SB44",
+    "precioOriginal": 39500,
+    "precioOferta": 33500,
+    "material": "Pino",
+    "color": "Sunburst"
 },
 {
     "id": "40",
-    "img": "/src/img/1.jpg",
-    "marca": "marca",
-    "modelo": "modelo",
-    "precioOriginal": 120000,
-    "precioOferta": 120000,
-    "material": "material",
-    "color": "color"
+    "img": "/src/img/40.jpg",
+    "marca": "Cort",
+    "modelo": "Electroacústica Grand Regal",
+    "precioOriginal": 102800,
+    "precioOferta": 82200,
+    "material": "Caoba",
+    "color": "Coral Blue Burst"
 },
 {
     "id": "41",
-    "img": "/src/img/1.jpg",
-    "marca": "marca",
-    "modelo": "modelo",
-    "precioOriginal": 120000,
-    "precioOferta": 120000,
-    "material": "material",
-    "color": "color"
+    "img": "/src/img/41.jpg",
+    "marca": "La Andaluza",
+    "modelo": "Electroacústica M55",
+    "precioOriginal": 50600,
+    "precioOferta": 43000,
+    "material": "Pino",
+    "color": "Azul"
 }
 ]
