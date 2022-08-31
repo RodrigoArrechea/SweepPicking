@@ -125,6 +125,9 @@ body {
         margin-bottom: 0.8rem; }
       .containerGuitarras #productos .card p {
         margin-bottom: 0.4rem; }
+      .containerGuitarras #productos .card .precio {
+        font-weight: 700;
+        font-size: 1.3rem; }
       .containerGuitarras #productos .card .precioOferta {
         color: #07a101;
         font-weight: 700;

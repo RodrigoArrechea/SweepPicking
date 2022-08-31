@@ -15,7 +15,7 @@ fetch("./data.json")
             cardClonada.children[3].innerText = "Material: " + par.material
             cardClonada.children[4].innerText = "Color: " + par.color
             cardClonada.children[5].innerText = "Precio Original: $" + par.precioOriginal
-            cardClonada.children[6].innerText = "Oferta: $" + par.precioOferta
+            cardClonada.children[6].innerText = "OFERTA: $" + par.precioOferta
             ofertas.appendChild(cardClonada)
         })
     })
