@@ -47,31 +47,11 @@ electricas.forEach((par) => {
     cardClonada.children[3].innerText = "Material: " + par.material
     cardClonada.children[4].innerText = "Color: " + par.color
     cardClonada.children[5].innerText = "$" + par.precio
+
     section.appendChild(cardClonada)
-})
 
-// BOTÓN COMPRAR
-
-const btnComprar = document.querySelector(".btn-comprar")
-
-btnComprar.addEventListener('click', () => {
-   
-    const Toast = Swal.mixin({
-        toast: true,
-        position: 'bottom-end',
-        showConfirmButton: false,
-        timer: 2000,
-        color: "#f2f2f2",
-        background: "#2c3d73",
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-      })
-      
-      Toast.fire({
-        icon: 'success',
-        title: 'Su producto fue agregado al carrito'
-      })
+    const btnComprar = document.querySelector(".btn-comprar")
+    btnComprar.addEventListener('click', () =>{
+      agregarAlCarrito(par.id)
+    })
 })

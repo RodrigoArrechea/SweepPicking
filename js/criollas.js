@@ -41,5 +41,11 @@ criollas.forEach((par) => {
     cardClonada.children[3].innerText = "Material: " + par.material
     cardClonada.children[4].innerText = "Color: " + par.color
     cardClonada.children[5].innerText = "$" + par.precio
+
     section.appendChild(cardClonada)
+
+    const btnComprar = document.querySelector(".btn-comprar")
+    btnComprar.addEventListener("click", () =>{
+      agregarAlCarrito(par.id)
+    })
 })

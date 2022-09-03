@@ -16,6 +16,12 @@ fetch("./data.json")
             cardClonada.children[4].innerText = "Color: " + par.color
             cardClonada.children[5].innerText = "Precio Original: $" + par.precioOriginal
             cardClonada.children[6].innerText = "OFERTA: $" + par.precioOferta
+
             ofertas.appendChild(cardClonada)
+
+            const btnComprar = document.querySelector(".btn-comprar")
+            btnComprar.addEventListener("click", () =>{
+                agregarAlCarrito(par.id)
+            })
         })
     })
