@@ -1,29 +1,93 @@
 const carrito = JSON.parse(localStorage.getItem('carrito')) || []
+const contenedorCarrito = document.querySelector("#carrito-contenedor")
 
-const carritoElectricas = (prodId) => {
-    const item = electricas.find((prod) => prod.id === prodId)
-    carrito.push(item)
+const agregarAlCarrito = (id) => {
+    const item = electricas.find((par) => par.id === id)
+    carrito.push(item);
     console.log(carrito)
+
+    const item2 = criollas.find((par) => par.id === id)
+    carrito.push(item2);
+    console.log(carrito)
+
+    const item3 = acusticas.find((par) => par.id === id)
+    carrito.push(item3);
+    console.log(carrito)
+
+    const item4 = "./data.json".find((par) => par.id === id)
+    carrito.push(item4);
+    console.log(carrito)
+
+    // templateCarrito ()
 }
 
-const carritoCriollas = (prodId) => {
-    const item = criollas.find((prod) => prod.id === prodId)
-    carrito.push(item)
-    console.log(carrito)
-}
 
-const carritoAcusticas = (prodId) => {
-    const item = acusticas.find((prod) => prod.id === prodId)
-    carrito.push(item)
-    console.log(carrito)
-}
 
-const carritoOfertas = (prodId) => {
-    const item = "./data.json".find((prod) => prod.id === prodId)
-    carrito.push(item)
-    console.log(carrito)
-}
 
+
+// const elminarDelCarrito = (id) => {
+//     const producto = carrito.find((par) => par.id === id)
+//     producto.cantidad -= 1
+
+//     if (producto.cantidad === 0) {
+//         const indice = carrito.indexOf(producto)
+//         carrito.splice(indice, 1)
+//     }
+ 
+//     localStorage.setItem('carrito', JSON.stringify(carrito))
+//     toastEliminar()
+//     renderCarrito()
+// }
+
+
+
+
+// const templateCarrito = () => {
+//     contenedorCarrito.innerHTML = ""
+
+//     carrito.forEach((par) => {
+//         const div = document.createElement('div')
+//         div.className = "productoEnCarrito"
+
+//         div.innerHTML = `
+//                     <p>${par.marca}</p>
+//                     <p>${par.modelo}</p>
+//                     <p>Precio: $${par.precio}</p>
+//                     <p>Cantidad: ${prod.cantidad}</p>
+//                     <button onclick="elminarDelCarrito(${prod.id})" class="boton-eliminar"><img src="../src/img/eliminar.png" class="" alt=""></button>
+//         `
+
+//         contenedorCarrito.append(div)
+//     })
+
+//     actualizarCantidad()
+//     actualizarTotal()
+// }
+
+
+
+
+
+
+// const actualizarCarrito = () => {
+//     contenedorCarrito.innerHTML = ""
+
+//     carrito.forEach((par) => {
+//         const div = document.createElement('div')
+//         div.className = ('productoEnCarrito')
+//         div.innerHTML = `
+//         <p>${par.nombre}</p>
+//         <p>Precio:$${par.precio}</p>
+//         <p>Cantidad: <span id="cantidad">${par.cantidad}</span></p>
+//         <button onclick="eliminarDelCarrito(${par.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+//         `
+
+//         contenedorCarrito.appendChild(div)
+        
+//         localStorage.setItem('carrito', JSON.stringify(carrito))
+
+//     })
+// }
 
 
 

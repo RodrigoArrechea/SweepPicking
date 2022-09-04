@@ -4,7 +4,7 @@
     "marca": "Fender",
     "modelo": "Coronado",
     "precioOriginal": 330800,
-    "precioOferta": 264700,
+    "precio": 264700,
     "material": "Arce",
     "color": "3-Color sunburst"
 },
@@ -14,7 +14,7 @@
     "marca": "Ibanez",
     "modelo": "GRX70QA",
     "precioOriginal": 91700,
-    "precioOferta": 77900,
+    "precio": 77900,
     "material": "Maple",
     "color": "Rojo"
 },
@@ -24,7 +24,7 @@
     "marca": "Joaquin Torralba",
     "modelo": "SB44",
     "precioOriginal": 39500,
-    "precioOferta": 33500,
+    "precio": 33500,
     "material": "Pino",
     "color": "Sunburst"
 },
@@ -34,7 +34,7 @@
     "marca": "Cort",
     "modelo": "Electroacústica Grand Regal",
     "precioOriginal": 102800,
-    "precioOferta": 82200,
+    "precio": 82200,
     "material": "Caoba",
     "color": "Coral Blue Burst"
 },
@@ -44,7 +44,7 @@
     "marca": "La Andaluza",
     "modelo": "Electroacústica M55",
     "precioOriginal": 50600,
-    "precioOferta": 43000,
+    "precio": 43000,
     "material": "Pino",
     "color": "Azul"
 }

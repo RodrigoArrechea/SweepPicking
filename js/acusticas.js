@@ -31,24 +31,22 @@ const { marca, precio } = acustica
 
 // DOM
 
-const section = document.querySelector("#productos")
-
-const temp = document.querySelector("template")
-const card = temp.content.querySelector("div")
+const templateAcusticas = document.querySelector("#contenedorAcusticas")
 
 acusticas.forEach((par) => {
-    let cardClonada = card.cloneNode(card,true)
-    cardClonada.children[0].src = par.img
-    cardClonada.children[1].innerText = par.marca
-    cardClonada.children[2].innerText = par.modelo
-    cardClonada.children[3].innerText = "Material: " + par.material
-    cardClonada.children[4].innerText = "Color: " + par.color
-    cardClonada.children[5].innerText = "$" + par.precio
-    
-    section.appendChild(cardClonada)
+    const div = document.createElement("div")
 
-    const btnComprar = document.querySelector(".btn-comprar")
-    btnComprar.addEventListener("click", () =>{
-      agregarAlCarrito(par.id)
-    })
+    div.className = "guitarra"
+    div.innerHTML = `
+        <div class="card">
+          <img src=${par.img} class="guitarra" alt="">
+          <h3>${par.marca}</h3>
+          <h5>${par.modelo}</h5>
+          <p>Material: ${par.material}</p>
+          <p>Color: ${par.color}</p>
+          <p class="precio">Precio: $${par.precio}</p>
+          <button id="agregar-${par.id}" onclick="agregarAlCarrito(${par.id})" class="boton-agregar">COMPRAR</button>
+        </div>
+    `
+    templateAcusticas.append(div)
 })

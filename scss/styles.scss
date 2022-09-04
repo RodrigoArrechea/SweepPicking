@@ -38,7 +38,7 @@ body{
         color: #030f59;
     }
 
-    #productos{
+    #contenedorOfertas, #contenedorElectricas, #contenedorAcusticas, #contenedorCriollas{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

@@ -229,35 +229,35 @@ body {
     text-align: center;
     padding: 20px 0px 20px 0px;
     color: #030f59; }
-  .containerGuitarras #productos {
+  .containerGuitarras #contenedorOfertas, .containerGuitarras #contenedorElectricas, .containerGuitarras #contenedorAcusticas, .containerGuitarras #contenedorCriollas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    .containerGuitarras #productos .card {
+    .containerGuitarras #contenedorOfertas .card, .containerGuitarras #contenedorElectricas .card, .containerGuitarras #contenedorAcusticas .card, .containerGuitarras #contenedorCriollas .card {
       max-width: 300px;
       padding: 20px;
       margin: 15px;
       text-align: center;
       border-radius: 10px; }
-      .containerGuitarras #productos .card h3 {
+      .containerGuitarras #contenedorOfertas .card h3, .containerGuitarras #contenedorElectricas .card h3, .containerGuitarras #contenedorAcusticas .card h3, .containerGuitarras #contenedorCriollas .card h3 {
         font-weight: 600; }
-      .containerGuitarras #productos .card h5 {
+      .containerGuitarras #contenedorOfertas .card h5, .containerGuitarras #contenedorElectricas .card h5, .containerGuitarras #contenedorAcusticas .card h5, .containerGuitarras #contenedorCriollas .card h5 {
         font-weight: 600;
         margin-bottom: 0.8rem; }
-      .containerGuitarras #productos .card p {
+      .containerGuitarras #contenedorOfertas .card p, .containerGuitarras #contenedorElectricas .card p, .containerGuitarras #contenedorAcusticas .card p, .containerGuitarras #contenedorCriollas .card p {
         margin-bottom: 0.4rem; }
-      .containerGuitarras #productos .card .precio {
+      .containerGuitarras #contenedorOfertas .card .precio, .containerGuitarras #contenedorElectricas .card .precio, .containerGuitarras #contenedorAcusticas .card .precio, .containerGuitarras #contenedorCriollas .card .precio {
         font-weight: 700;
         font-size: 1.3rem; }
-      .containerGuitarras #productos .card .precioOferta {
+      .containerGuitarras #contenedorOfertas .card .precioOferta, .containerGuitarras #contenedorElectricas .card .precioOferta, .containerGuitarras #contenedorAcusticas .card .precioOferta, .containerGuitarras #contenedorCriollas .card .precioOferta {
         color: #07a101;
         font-weight: 700;
         font-size: 1.3rem; }
-      .containerGuitarras #productos .card .precioOriginal {
+      .containerGuitarras #contenedorOfertas .card .precioOriginal, .containerGuitarras #contenedorElectricas .card .precioOriginal, .containerGuitarras #contenedorAcusticas .card .precioOriginal, .containerGuitarras #contenedorCriollas .card .precioOriginal {
         text-decoration: line-through;
         color: #e90d0d;
         font-weight: 600; }
-      .containerGuitarras #productos .card button {
+      .containerGuitarras #contenedorOfertas .card button, .containerGuitarras #contenedorElectricas .card button, .containerGuitarras #contenedorAcusticas .card button, .containerGuitarras #contenedorCriollas .card button {
         border-radius: 5px;
         border-color: transparent;
         background-color: #030f59;
@@ -266,10 +266,10 @@ body {
         margin-left: auto;
         margin-right: auto;
         padding: 2px 8px 2px 8px; }
-      .containerGuitarras #productos .card button:hover {
+      .containerGuitarras #contenedorOfertas .card button:hover, .containerGuitarras #contenedorElectricas .card button:hover, .containerGuitarras #contenedorAcusticas .card button:hover, .containerGuitarras #contenedorCriollas .card button:hover {
         border-color: transparent;
         background-color: #f24405;
         color: #ffffff;
         transition: 0.7s; }
-    .containerGuitarras #productos .guitarras {
+    .containerGuitarras #contenedorOfertas .guitarras, .containerGuitarras #contenedorElectricas .guitarras, .containerGuitarras #contenedorAcusticas .guitarras, .containerGuitarras #contenedorCriollas .guitarras {
       max-width: 250px; }
