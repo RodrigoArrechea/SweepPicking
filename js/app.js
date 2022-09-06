@@ -122,6 +122,7 @@ function productos () {
 
 productos()
 
+console.log(stock)
 console.log(stock[0])
 
 const agregarAlCarrito = (id) => {
@@ -130,8 +131,8 @@ const agregarAlCarrito = (id) => {
     console.log(carrito)
 }
 
-agregarAlCarrito(5)
-agregarAlCarrito(10)
+agregarAlCarrito(4)
+agregarAlCarrito(9)
 
 
 
