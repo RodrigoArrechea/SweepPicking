@@ -3,6 +3,7 @@
 @import "./slide";
 @import "./footer";
 @import "./modal";
+@import "./carrusel";
 
 /*GENERAL*/
 
@@ -22,6 +23,27 @@ body{
     text-align: center;
     padding: 20px 0px 20px 0px;
     color: #030f59;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    #marca{
+        max-width: 350px;
+        min-width: 300px;
+        width: 100%;
+        display: block;
+        margin: 0px auto 25px auto;
+    }
+    
+    .parrafo{
+        min-width: 300px;
+        font-size: 1.2rem;
+        color: #030f59;
+        text-align: justify;
+    }
 }
 
 .containerGuitarras{
@@ -81,14 +103,21 @@ body{
             }
         
             button{
+                display: flex;
                 border-radius: 5px;
                 border-color: transparent;
                 background-color: #030f59;
                 color: #ffffff;
-                max-width: 100px;
+                max-width: 150px;
                 margin-left: auto;
                 margin-right: auto;
                 padding: 2px 8px 2px 8px;
+                align-items: center;
+
+                .carritoBoton{
+                    max-width: 20px;
+                    margin-right: 8px;
+                }
             }
         
             button:hover{

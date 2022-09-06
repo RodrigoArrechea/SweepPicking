@@ -1,29 +1,3 @@
-const carrito = JSON.parse(localStorage.getItem('carrito')) || []
-const contenedorCarrito = document.querySelector("#carrito-contenedor")
-
-const agregarAlCarrito = (id) => {
-    const item = electricas.find((par) => par.id === id)
-    carrito.push(item);
-    console.log(carrito)
-
-    const item2 = criollas.find((par) => par.id === id)
-    carrito.push(item2);
-    console.log(carrito)
-
-    const item3 = acusticas.find((par) => par.id === id)
-    carrito.push(item3);
-    console.log(carrito)
-
-    const item4 = "./data.json".find((par) => par.id === id)
-    carrito.push(item4);
-    console.log(carrito)
-
-    // templateCarrito ()
-}
-
-
-
-
 
 // const elminarDelCarrito = (id) => {
 //     const producto = carrito.find((par) => par.id === id)

@@ -202,6 +202,28 @@ footer {
 .boton-eliminar:focus {
   outline: none; }
 
+.carrusel {
+  display: flex;
+  align-items: center; }
+  .carrusel .carrusel-items {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px 0px; }
+    .carrusel .carrusel-items .carrusel-item {
+      min-width: 300px;
+      max-width: 300px;
+      height: 200px;
+      cursor: pointer; }
+      .carrusel .carrusel-items .carrusel-item img {
+        width: 100%;
+        margin: auto;
+        padding-right: 35px;
+        padding-left: 35px; }
+      .carrusel .carrusel-items .carrusel-item img:hover {
+        transform: scale(1.2);
+        transition: 0.5s; }
+
 /*GENERAL*/
 * {
   margin: 0;
@@ -217,6 +239,22 @@ body {
   text-align: center;
   padding: 20px 0px 20px 0px;
   color: #030f59; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .container #marca {
+    max-width: 350px;
+    min-width: 300px;
+    width: 100%;
+    display: block;
+    margin: 0px auto 25px auto; }
+  .container .parrafo {
+    min-width: 300px;
+    font-size: 1.2rem;
+    color: #030f59;
+    text-align: justify; }
 
 .containerGuitarras {
   max-width: 1200px;
@@ -258,14 +296,19 @@ body {
         color: #e90d0d;
         font-weight: 600; }
       .containerGuitarras #contenedorOfertas .card button, .containerGuitarras #contenedorElectricas .card button, .containerGuitarras #contenedorAcusticas .card button, .containerGuitarras #contenedorCriollas .card button {
+        display: flex;
         border-radius: 5px;
         border-color: transparent;
         background-color: #030f59;
         color: #ffffff;
-        max-width: 100px;
+        max-width: 150px;
         margin-left: auto;
         margin-right: auto;
-        padding: 2px 8px 2px 8px; }
+        padding: 2px 8px 2px 8px;
+        align-items: center; }
+        .containerGuitarras #contenedorOfertas .card button .carritoBoton, .containerGuitarras #contenedorElectricas .card button .carritoBoton, .containerGuitarras #contenedorAcusticas .card button .carritoBoton, .containerGuitarras #contenedorCriollas .card button .carritoBoton {
+          max-width: 20px;
+          margin-right: 8px; }
       .containerGuitarras #contenedorOfertas .card button:hover, .containerGuitarras #contenedorElectricas .card button:hover, .containerGuitarras #contenedorAcusticas .card button:hover, .containerGuitarras #contenedorCriollas .card button:hover {
         border-color: transparent;
         background-color: #f24405;

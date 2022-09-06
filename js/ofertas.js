@@ -17,7 +17,7 @@ fetch("./data.json")
                   <p>Color: ${par.color}</p>
                   <p class="precioOriginal">Precio original: $${par.precioOriginal}</p>
                   <p class="precioOferta">OFERTA: $${par.precio}</p>
-                  <button id="agregar-${par.id}" onclick="agregarAlCarrito(${par.id})" class="boton-agregar">COMPRAR</button>
+                  <button id="agregar-${par.id}" onclick="agregarAlCarrito(${par.id})" class="boton-agregar"><img src="../src/img/carrito.png" class="carritoBoton" alt="">COMPRAR</button>
               </div>
             `
             templateOfertas.append(div)

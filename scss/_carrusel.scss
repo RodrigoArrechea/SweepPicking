@@ -1,0 +1,30 @@
+.carrusel {
+    display: flex;
+    align-items: center;
+
+    .carrusel-items {
+      display: flex;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      padding: 30px 0px;
+
+      .carrusel-item {
+        min-width: 300px;
+        max-width: 300px;
+        height: 200px;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          margin: auto;
+          padding-right: 35px;
+          padding-left: 35px;
+        }
+        
+        img:hover {
+          transform: scale(1.2);
+          transition: 0.5s;
+        }
+      }
+    }
+  }

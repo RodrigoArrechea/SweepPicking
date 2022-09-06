@@ -1,0 +1,415 @@
+[{
+    "id": "1",
+    "categoria": "electrica",
+    "img": "../src/img/1.jpg",
+    "marca": "Gibson",
+    "modelo": "Les Paul Tribute",
+    "precio": 690400,
+    "material": "Caoba",
+    "color": "3-Color sunburst"
+},
+{
+    "id": "2",
+    "categoria": "electrica",
+    "img": "../src/img/2.jpg",
+    "marca": "Gibson",
+    "modelo": "Sg Special",
+    "precio": 510000,
+    "material": "Caoba",
+    "color": "Heritage cherry"
+},
+{
+    "id": "3",
+    "categoria": "electrica",
+    "img": "../src/img/3.jpg",
+    "marca": "Fender",
+    "modelo": "Mustang 65s Classic Series",
+    "precio": 480500,
+    "material": "Álamo",
+    "color": "Olympic White"
+},
+{
+    "id": "4",
+    "categoria": "electrica",
+    "img": "../src/img/4.jpg",
+    "marca": "Fender",
+    "modelo": "Meteora Hh Pfn",
+    "precio": 317500,
+    "material": "Arce",
+    "color": "Azul petróleo"
+},
+{
+    "id": "5",
+    "categoria": "electrica",
+    "img": "../src/img/5.jpg",
+    "marca": "Epiphone",
+    "modelo": "Explorer Original Collection",
+    "precio": 280000,
+    "material": "Caoba",
+    "color": "Ebony"
+},
+{
+    "id": "6",
+    "categoria": "electrica",
+    "img": "../src/img/6.jpg",
+    "marca": "Epiphone",
+    "modelo": "Joe Pass Emperor II Pro",
+    "precio": 299300,
+    "material": "Arce",
+    "color": "Vintage sunburst"
+},
+{
+    "id": "7",
+    "categoria": "electrica",
+    "img": "../src/img/7.jpg",
+    "marca": "Squier",
+    "modelo": "Stratocaster Affinity Series",
+    "precio": 152300,
+    "material": "Álamo",
+    "color": "Brown sunburst"
+},
+{
+    "id": "8",
+    "categoria": "electrica",
+    "img": "../src/img/8.jpg",
+    "marca": "Squier",
+    "modelo": "Paranormal Toronado HH",
+    "precio": 225500,
+    "material": "Álamo",
+    "color": "Negro"
+},
+{
+    "id": "9",
+    "categoria": "electrica",
+    "img": "../src/img/9.jpg",
+    "marca": "Ibanez",
+    "modelo": "Gio Gsa60",
+    "precio": 115300,
+    "material": "Caoba",
+    "color": "Walnut flat"
+},
+{
+    "id": "10",
+    "categoria": "electrica",
+    "img": "../src/img/10.jpg",
+    "marca": "Ibanez",
+    "modelo": "Frm150 Fireman",
+    "precio": 385700,
+    "material": "Caoba",
+    "color": "Transparent red"
+},
+{
+    "id": "11",
+    "categoria": "electrica",
+    "img": "../src/img/11.jpg",
+    "marca": "SX",
+    "modelo": "Telecaster Ftl50 1950",
+    "precio": 82700,
+    "material": "Basswood",
+    "color": "Sunburst"
+},
+{
+    "id": "12",
+    "categoria": "electrica",
+    "img": "../src/img/12.jpg",
+    "marca": "SX",
+    "modelo": "Les Paul Standard",
+    "precio": 86300,
+    "material": "Caoba",
+    "color": "Cherry sunburst"
+},
+{
+    "id": "13",
+    "categoria": "electrica",
+    "img": "../src/img/13.jpg",
+    "marca": "Cort",
+    "modelo": "M Custom",
+    "precio": 370800,
+    "material": "Maple",
+    "color": "Tiger Eye Sunburst"
+},
+{
+    "id": "14",
+    "categoria": "electrica",
+    "img": "../src/img/14.jpg",
+    "marca": "Cort",
+    "modelo": "Sunset 2",
+    "precio": 170700,
+    "material": "Caoba",
+    "color": "Rojo"
+},
+{
+    "id": "15",
+    "categoria": "electrica",
+    "img": "../src/img/15.jpg",
+    "marca": "Hagstrom",
+    "modelo": "Retroscape Impala",
+    "precio": 250600,
+    "material": "Caoba",
+    "color": "Negro"
+},
+{
+    "id": "16",
+    "categoria": "criolla",
+    "img": "../src/img/16.jpg",
+    "marca": "Gracia",
+    "modelo": "M7",
+    "precio": 37500,
+    "material": "Pino",
+    "color": "Natural"
+},
+{
+    "id": "17",
+    "categoria": "criolla",
+    "img": "../src/img/17.jpg",
+    "marca": "Gracia",
+    "modelo": "M1",
+    "precio": 20500,
+    "material": "Abedul",
+    "color": "Natural"
+},
+{
+    "id": "18",
+    "categoria": "criolla",
+    "img": "../src/img/18.jpg",
+    "marca": "Gracia",
+    "modelo": "Gold Psy",
+    "precio": 105700,
+    "material": "Abeto",
+    "color": "Natural"
+},
+{
+    "id": "19",
+    "categoria": "criolla",
+    "img": "../src/img/19.jpg",
+    "marca": "Gracia",
+    "modelo": "Godin Gold",
+    "precio": 68000,
+    "material": "Caoba",
+    "color": "Natural oscuro"
+},
+{
+    "id": "20",
+    "categoria": "criolla",
+    "img": "../src/img/20.jpg",
+    "marca": "Racker",
+    "modelo": "Criolla Clásica",
+    "precio": 9999,
+    "material": "Pino",
+    "color": "Esfumado"
+},
+{
+    "id": "21",
+    "categoria": "criolla",
+    "img": "../src/img/21.jpg",
+    "marca": "Racker",
+    "modelo": "2da Selección",
+    "precio": 9999,
+    "material": "Pino",
+    "color": "Negro"
+},
+{
+    "id": "22",
+    "categoria": "criolla",
+    "img": "../src/img/22.jpg",
+    "marca": "Fonseca",
+    "modelo": "15",
+    "precio": 23600,
+    "material": "Abedul",
+    "color": "Natural"
+},
+{
+    "id": "23",
+    "categoria": "criolla",
+    "img": "../src/img/23.jpg",
+    "marca": "La Andaluza",
+    "modelo": "M12",
+    "precio": 16700,
+    "material": "Guatambú",
+    "color": "Azul Esfumado"
+},
+{
+    "id": "24",
+    "categoria": "criolla",
+    "img": "../src/img/24.jpg",
+    "marca": "RDL",
+    "modelo": "36",
+    "precio": 22500,
+    "material": "Pino",
+    "color": "Natural"
+},
+{
+    "id": "25",
+    "categoria": "acustica",
+    "img": "../src/img/25.jpg",
+    "marca": "Fender",
+    "modelo": "Acústica FA-235E",
+    "precio": 162500,
+    "material": "Arce",
+    "color": "FA-235E"
+},
+{
+    "id": "26",
+    "categoria": "acustica",
+    "img": "../src/img/26.jpg",
+    "marca": "Fender",
+    "modelo": "Electroacústica Newporter",
+    "precio": 197600,
+    "material": "Abeto",
+    "color": "Rustic copper"
+},
+{
+    "id": "27",
+    "categoria": "acustica",
+    "img": "../src/img/27.jpg",
+    "marca": "Epiphone",
+    "modelo": "Acústica DR100",
+    "precio": 83000,
+    "material": "Caoba",
+    "color": "Vintage sunburst"
+},
+{
+    "id": "28",
+    "categoria": "acustica",
+    "img": "../src/img/28.jpg",
+    "marca": "Epiphone",
+    "modelo": "Electroacústica J200",
+    "precio": 211400,
+    "material": "Arce",
+    "color": "Vintage natural"
+},
+{
+    "id": "29",
+    "categoria": "acustica",
+    "img": "../src/img/29.jpg",
+    "marca": "Epiphone",
+    "modelo": "Acústica PRO-1",
+    "precio": 86800,
+    "material": "Caoba",
+    "color": "Negro"
+},
+{
+    "id": "30",
+    "categoria": "acustica",
+    "img": "../src/img/30.jpg",
+    "marca": "Gracia",
+    "modelo": "Acústica 110",
+    "precio": 47300,
+    "material": "Abedul",
+    "color": "Natural"
+},
+{
+    "id": "31",
+    "categoria": "acustica",
+    "img": "../src/img/31.jpg",
+    "marca": "Godin",
+    "modelo": "Electroacústica Q1",
+    "precio": 228000,
+    "material": "Caoba",
+    "color": "Antique Burst"
+},
+{
+    "id": "32",
+    "categoria": "acustica",
+    "img": "../src/img/32.jpg",
+    "marca": "Cort",
+    "modelo": "Acústica MR730FX",
+    "precio": 192000,
+    "material": "Abeto",
+    "color": "Natural glossy"
+},
+{
+    "id": "33",
+    "categoria": "acustica",
+    "img": "../src/img/33.jpg",
+    "marca": "Epiphone",
+    "modelo": "Acústica Jumbo",
+    "precio": 184000,
+    "material": "Caoba",
+    "color": "Ebony"
+},
+{
+    "id": "34",
+    "categoria": "acustica",
+    "img": "../src/img/34.jpg",
+    "marca": "Martin & Co.",
+    "modelo": "Electroacústica Fishman",
+    "precio": 790500,
+    "material": "Caoba",
+    "color": "Rustic copper"
+},
+{
+    "id": "35",
+    "categoria": "acustica",
+    "img": "../src/img/35.jpg",
+    "marca": "Gimmie Shelter",
+    "modelo": "Electroacústica Apx",
+    "precio": 85600,
+    "material": "Abeto",
+    "color": "Cherry"
+},
+{
+    "id": "36",
+    "categoria": "acustica",
+    "img": "../src/img/36.jpg",
+    "marca": "Racker",
+    "modelo": "Acústica Basic",
+    "precio": 22500,
+    "material": "Pino",
+    "color": "Nylon caoba"
+},
+{
+    "id": "37",
+    "categoria": "oferta",
+    "img": "./src/img/37.jpg",
+    "marca": "Fender",
+    "modelo": "Coronado",
+    "precioOriginal": 330800,
+    "precio": 264700,
+    "material": "Arce",
+    "color": "3-Color sunburst"
+},
+{
+    "id": "38",
+    "categoria": "oferta",
+    "img": "./src/img/38.jpg",
+    "marca": "Ibanez",
+    "modelo": "GRX70QA",
+    "precioOriginal": 91700,
+    "precio": 77900,
+    "material": "Maple",
+    "color": "Rojo"
+},
+{
+    "id": "39",
+    "categoria": "oferta",
+    "img": "./src/img/39.jpg",
+    "marca": "Joaquin Torralba",
+    "modelo": "SB44",
+    "precioOriginal": 39500,
+    "precio": 33500,
+    "material": "Pino",
+    "color": "Sunburst"
+},
+{
+    "id": "40",
+    "categoria": "oferta",
+    "img": "./src/img/40.jpg",
+    "marca": "Cort",
+    "modelo": "Electroacústica Grand Regal",
+    "precioOriginal": 102800,
+    "precio": 82200,
+    "material": "Caoba",
+    "color": "Coral Blue Burst"
+},
+{
+    "id": "41",
+    "categoria": "oferta",
+    "img": "./src/img/41.jpg",
+    "marca": "La Andaluza",
+    "modelo": "Electroacústica M55",
+    "precioOriginal": 50600,
+    "precio": 43000,
+    "material": "Pino",
+    "color": "Azul"
+}]
