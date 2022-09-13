@@ -40,39 +40,18 @@
               </li>
             </ul>
             <a class="navbar-brand" href="carrito.html"><img id="carrito" src="../src/img/carrito.png" alt="carrito"></a>
-            <form>
-              <input class="form-control" type="text" placeholder="Buscar producto..." aria-label="Search">
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+            <form class="d-flex">
+              <input id="buscador" class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+              <button id="botonBusqueda" class="btn btn-outline-success" type="submit"><img src="../src/img/lupa.png" alt="" id="lupa"></button>
             </form>
           </div>
         </div>
-        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
       </nav>
     </header>
 
     <div class="containerGuitarras">
       <p class="categoria">Guitarras Eléctricas</p>
-      <section id="filtros">
-        <div class="btn-group">
-          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Marca
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item active" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-        <div class="btn-group">
-          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Precio
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item active" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-      </section>
       <section id="productos">
         <div class="row">
             <div class="col">

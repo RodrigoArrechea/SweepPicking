@@ -39,13 +39,15 @@
                 <a class="nav-link" href="pages/acusticas.html">ACÚSTICAS</a>
               </li>
             </ul>
-            <a class="navbar-brand" href="pages/carrito.html"><img id="carrito" src="src/img/carrito.png" alt="carrito"></a>
-            <form>
-              <input class="form-control" type="text" placeholder="Buscar producto..." aria-label="Search">
+            <a class="navbar-brand" href="pages/carrito.html"><img id="carrito" src="src/img/carrito.png" alt="carrito"><button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button></a>
+            
+            <form class="d-flex">
+              <input id="buscador" class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+              <button id="botonBusqueda" class="btn btn-outline-success" type="submit"><img src="src/img/lupa.png" alt="" id="lupa"></button>
             </form>
           </div>
         </div>
-        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+        
       </nav>
     </header>
 

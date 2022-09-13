@@ -48,4 +48,26 @@ header{
     .form-control{
         font-size: 0.8rem;
     }
+
+    #lupa{
+        max-width: 15px;
+    }
+
+    .btn-outline-success {
+        color: #030f59;
+        border-color: transparent;
+    }
+
+    .btn-outline-success:hover {
+        color: #030f59;
+        border-color: transparent;
+    }
+
+    #botonBusqueda{
+        color: #030f59;
+        border-color: transparent;
+    }
+    #botonBusqueda:hover{
+        background-color: #030f59;
+    }
 }

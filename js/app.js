@@ -114,28 +114,73 @@ const contenedorCarrito = document.querySelector("#carrito-contenedor")
 
 const stock = []
 
-function productos () {
-    fetch ("../stock.json")
-    .then (res => res.json())
-    .then (res => stock.push(res))
+const guitarras = async () => {
+    const resp = await fetch("../stock.json")
+    const data =  await resp.json()
+    stock.push(data)
 }
 
-productos()
+guitarras()
 
 console.log(stock)
-console.log(stock[0])
 
 const agregarAlCarrito = (id) => {
-    const item = stock.find((par) => par.id === id)
+    const item = stock[0].find((par) => par.id === id)
     carrito.push(item);
     console.log(carrito)
 }
 
-agregarAlCarrito(4)
-agregarAlCarrito(9)
 
 
 
+
+
+// BOTÓN COMPRAR
+
+const btnComprar = document.querySelector(".boton-agregar")
+
+btnComprar.addEventListener("click", () => {
+   
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'bottom-end',
+        showConfirmButton: false,
+        timer: 2000,
+        color: "#f2f2f2",
+        background: "#2c3d73",
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Su producto fue agregado al carrito'
+      })
+})
+
+
+
+
+
+// FORMULARIO DE BÚSQUEDA
+
+// EJEMPLO VIDEO SIN TERMINAR EN FAVS
+
+// const buscador = document.querySelector("#buscador")
+// const botonBusqueda = document.querySelector("#botonBusqueda")
+
+// const filtrar = () =>{
+//     // console.log(buscador.value)
+//     const texto = buscador.value.toLowerCase()
+//     for (let guitarra of stock){
+//         let nombre = guitarra.marca.toLowerCase()
+//     }
+// }
+
+// botonBusqueda.addEventListener("click", filtrar)
 
 
 

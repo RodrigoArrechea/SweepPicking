@@ -13,9 +13,16 @@ footer{
         padding-right: 20px;
         padding-left: 20px;
 
+        .row{
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+        }
+
         .col-2 {
             min-width: 230px;
             padding: 30px,10px,30px,10px;
+            margin-top: 15px;
         }
 
         #pagos{
@@ -25,7 +32,9 @@ footer{
 
         .col-4{
             max-width: 350px;
-            right: 0;
+            width: 100%;
+            margin-right: 0;
+            margin-top: 15px;
         }
 
         .icono{
@@ -46,6 +55,10 @@ footer{
             background-color: #f1836a;
             border-color: transparent;
             transition: 0.5s;
+        }
+
+        .offset-1 {
+            margin-left: 0;
         }
     }    
 }
