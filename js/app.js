@@ -108,12 +108,12 @@ fetch ("../stock.json")
 
 
 
-
 // CARRITO
 
 const carrito = JSON.parse (localStorage.getItem ("carrito")) || []
 const contenedorCarrito = document.querySelector("#carrito-contenedor")
 const btnVaciarCarrito = document.querySelector("#vaciar-carrito")
+const btnFinalizarCompra = document.querySelector("#finalizar-compra")
 const contadorCarrito = document.querySelector('#contadorCarrito')
 const montoTotal = document.querySelector('#precioTotal')
 
@@ -167,10 +167,24 @@ const eliminarGuitarra = (id) => {
 
 // === ANULAR COMPRA ===
 
+const ocultarBoton = () => {
+    if (carrito.length === 0) {
+        btnVaciarCarrito.style.display = "none"
+    } else {
+        btnVaciarCarrito.style.display = "block"
+    }
+
+    if (carrito.length === 0) {
+        btnFinalizarCompra.style.display = "none"
+    } else {
+        btnFinalizarCompra.style.display = "block"
+    }
+}
+
 const vaciarCarrito = () => {
     Swal.fire(
         {
-            title: "Está seguro?",
+            title: "¿Está seguro?",
             icon: "warning",
             showCancelButton: true,
             confirmButtonText: "Sí.",
@@ -234,6 +248,8 @@ const renderCarrito = () => {
 
 const actualizarCantidad = () => {
     contadorCarrito.innerText = carrito.reduce ((acc, par) => acc += par.cantidad, 0)
+
+    ocultarBoton ()
 }
 
 // === DEFINIR PRECIO TOTAL ===
@@ -288,26 +304,26 @@ const guitarraBorrada = () => {
 
 }
 
-
 renderCarrito()
 
 
-// FORMULARIO DE BÚSQUEDA
 
-// EJEMPLO VIDEO SIN TERMINAR EN FAVS
+// BUSCADOR DE GUITARRAS
 
-// const buscador = document.querySelector("#buscador")
-// const botonBusqueda = document.querySelector("#botonBusqueda")
+document.addEventListener("keyup", e => {
 
-// const filtrar = () =>{
-//     // console.log(buscador.value)
-//     const texto = buscador.value.toLowerCase()
-//     for (let guitarra of stock){
-//         let nombre = guitarra.marca.toLowerCase()
-//     }
-// }
-
-// botonBusqueda.addEventListener("click", filtrar)
+    if (e.target.matches("#filtroGuitarra")){
+  
+        if (e.key === "Escape") e.target.value = ""
+  
+        document.querySelectorAll(".card").forEach ( guitarra => {
+  
+            guitarra.textContent.toLowerCase ().includes (e.target.value.toLowerCase ())
+              ?guitarra.classList.remove("filtro")
+              :guitarra.classList.add("filtro")
+        })
+    }
+})
 
 
 
@@ -341,8 +357,6 @@ form.addEventListener('submit', (event) => {
       )
 
     localStorage.setItem("Clientes", JSON.stringify(baseDeDatos))
-
-    console.log(...baseDeDatos)
 
     form.reset()
 })
