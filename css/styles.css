@@ -224,6 +224,17 @@ footer {
 .boton-eliminar:focus {
   outline: none; }
 
+.guitarraMiniatura {
+  max-width: 20px;
+  width: 100%;
+  height: 100%; }
+
+.borrarGuitarra {
+  max-width: 18px; }
+
+.cerrarModal {
+  max-width: 25px; }
+
 .carrusel {
   display: flex;
   align-items: center; }

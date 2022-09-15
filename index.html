@@ -39,8 +39,8 @@
                 <a class="nav-link" href="pages/acusticas.html">ACÚSTICAS</a>
               </li>
             </ul>
-            <a class="navbar-brand" href="pages/carrito.html"><img id="carrito" src="src/img/carrito.png" alt="carrito"><button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button></a>
-            
+            <a class="navbar-brand" href=""><img id="carrito" src="src/img/carrito.png" alt="carrito"></a>
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
             <form class="d-flex">
               <input id="buscador" class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
               <button id="botonBusqueda" class="btn btn-outline-success" type="submit"><img src="src/img/lupa.png" alt="" id="lupa"></button>
@@ -105,6 +105,7 @@
     </section>
 
     <div class="containerGuitarras">
+
       <section id="nosotros">
         <p class="titulos">Nosotros</p>
         <div class="container">
@@ -120,7 +121,9 @@
           </div>
         </div>
       </section>
+
       <hr>
+
       <section id="marcas">
         <p class="titulos">Marcas que trabajamos</p>
         <div class="carrusel">
@@ -161,7 +164,9 @@
           </div>
         </div>
       </section>
+
       <hr>
+
       <section id="ofertas">
         <p class="titulos">Ofertas</p>
         <div id="productos">
@@ -173,16 +178,18 @@
           </div>
         </div>
       </section>
+
       <section id="modal" class="modal-contenedor">
         <div class="modal-carrito">
             <h3>Carrito</h3>
-            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <button id="carritoCerrar"><img src="src/img/cerrarModal.png" class="cerrarModal" alt=""></button>
             <div id="carrito-contenedor">
             </div>
             <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
             <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
         </div>
       </section>
+
     </div>
 
     <footer class="py-5">
