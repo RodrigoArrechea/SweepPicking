@@ -361,7 +361,7 @@
 {
     "id": 37,
     "categoria": "oferta",
-    "img": "./src/img/37.jpg",
+    "img": "../src/img/37.jpg",
     "marca": "Fender",
     "modelo": "Coronado",
     "precioOriginal": 330800,
@@ -372,7 +372,7 @@
 {
     "id": 38,
     "categoria": "oferta",
-    "img": "./src/img/38.jpg",
+    "img": "../src/img/38.jpg",
     "marca": "Ibanez",
     "modelo": "GRX70QA",
     "precioOriginal": 91700,
@@ -383,7 +383,7 @@
 {
     "id": 39,
     "categoria": "oferta",
-    "img": "./src/img/39.jpg",
+    "img": "../src/img/39.jpg",
     "marca": "Joaquin Torralba",
     "modelo": "SB44",
     "precioOriginal": 39500,
@@ -394,7 +394,7 @@
 {
     "id": 40,
     "categoria": "oferta",
-    "img": "./src/img/40.jpg",
+    "img": "../src/img/40.jpg",
     "marca": "Cort",
     "modelo": "Electroacústica Grand Regal",
     "precioOriginal": 102800,
@@ -405,7 +405,7 @@
 {
     "id": 41,
     "categoria": "oferta",
-    "img": "./src/img/41.jpg",
+    "img": "../src/img/41.jpg",
     "marca": "La Andaluza",
     "modelo": "Electroacústica M55",
     "precioOriginal": 50600,
