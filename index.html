@@ -44,71 +44,26 @@
             </ul>
             <a class="navbar-brand"><img id="carrito" src="src/img/carrito.png" alt="carrito"></a>
             <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
-            <form class="d-flex">
-              <input id="buscador" class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-              <button id="botonBusqueda" class="btn btn-outline-success" type="submit"><img src="src/img/lupa.png" alt="" id="lupa"></button>
-            </form>
           </div>
         </div>
         
       </nav>
     </header>
 
-    <section id="slide">
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="src/img/slide2.jpg" alt="" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect>
-    
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>La mejor calidad.</h1>
-                <p>En Sweep Picking vas a encontrar las mejores marcas del mercado.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Conocelas</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="src/img/slide1.jpg" alt="" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect>
-    
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Grandes ofertas durante Agosto</h1>
-                <p>Aprovechá durante todo este mes y conseguí tu guitarra a un precio increíble.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Ofertas</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="src/img/slide3.jpg" alt="" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect>
-    
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <section id="inicio">
+      <div id="contenedorvideo">
+        <video src="src/video/videofondo.mp4" autoplay muted loop></video>
+      </div>
+      <div>
+        <h1 id="nombre" class="animate__animated animate__fadeIn animate__delay-1s">Sweep picking</h1>
+        <h2 id="descripcion" class="animate__animated animate__fadeInUp animate__delay-1s">Guitarras para todos los niveles.</h2>
+      </div>
+      <div>
+        <a href="#nosotros"><img class="animate__animated animate__fadeInDown animate__delay-2s animation_iteration_count_infinite" id="flecha" src="src/img/flecha.png" alt="flecha" width="40"></a>
       </div>
     </section>
 
     <div class="containerGuitarras">
-
       <section id="nosotros">
         <p class="titulos">Nosotros</p>
         <div class="container">
@@ -167,22 +122,21 @@
           </div>
         </div>
       </section>
-
-      <section id="modal" class="modal-contenedor">
-        <div class="modal-carrito">
-            <h3>Carrito</h3>
-            <button id="carritoCerrar"><img src="src/img/cerrarModal.png" class="cerrarModal" alt=""></button>
-            <div id="carrito-contenedor">
-            </div>
-            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
-            <div class="botones-carrito">
-              <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
-              <button id="finalizar-compra" class="boton-agregar">Finalizar compra</button>
-            </div>
-        </div>
-      </section>
-
     </div>
+
+    <section id="modal" class="modal-contenedor">
+      <div class="modal-carrito">
+          <h3>Mi compra:</h3>
+          <button id="carritoCerrar"><img src="src/img/cerrarModal.png" class="cerrarModal" alt=""></button>
+          <div id="carrito-contenedor">
+          </div>
+          <p class="precioProducto">Total: $<span id="precioTotal">0</span></p>
+          <div class="botones-carrito">
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            <button id="finalizar-compra" class="boton-agregar">Finalizar compra</button>
+          </div>
+      </div>
+    </section>
 
     <footer class="py-5">
       <div id="conteinerFooter">

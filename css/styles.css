@@ -1,12 +1,14 @@
 /*HEADER*/
 header {
   background-color: #030f59;
-  position: sticky;
+  position: fixed;
   top: 0;
   font-weight: 400;
   font-size: 1rem;
   width: 100%;
-  z-index: 1; }
+  z-index: 1000; }
+  header .navbar-brand {
+    margin-right: 0px; }
   header #logo {
     max-width: 200px;
     padding: 8px; }
@@ -14,7 +16,7 @@ header {
     max-width: 20px; }
   header #carrito {
     max-width: 30px;
-    margin: 15px; }
+    margin: 15px 0px 15px 15px; }
   header .navbar-collapse {
     flex-grow: 0; }
   header .nav-link {
@@ -29,8 +31,6 @@ header {
     box-shadow: 0 0 0 0rem; }
   header .form-control {
     font-size: 0.8rem; }
-  header #lupa {
-    max-width: 15px; }
   header .btn-outline-success {
     color: #030f59;
     border-color: transparent; }
@@ -44,14 +44,48 @@ header {
     background-color: #030f59; }
 
 /*INICIO*/
-.carousel-caption {
-  position: absolute;
-  top: 15%; }
-  .carousel-caption h1 {
-    font-size: 2.2rem;
-    font-weight: 600; }
-  .carousel-caption p {
-    font-size: 1.1rem; }
+#inicio {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: #f2f2f2; }
+  #inicio #contenedorvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    #inicio #contenedorvideo video {
+      height: 100vh;
+      width: 100vh;
+      min-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -100; }
+  #inicio #nombre {
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    max-width: 600px;
+    padding: 10px; }
+  #inicio #descripcion {
+    font-weight: 400;
+    font-size: 30px;
+    padding: 0; }
+  #inicio #flecha {
+    position: absolute;
+    bottom: 25px;
+    margin-left: -20px; }
 
 /*FOOTER*/
 footer {
@@ -105,17 +139,18 @@ footer {
 
 #boton-carrito {
   border: none;
-  color: royalblue;
-  font-size: 40px;
-  background-color: white;
+  color: #dfdfdf;
+  font-size: 14px;
+  background-color: #f24405;
   border-radius: 50%;
-  padding: 10px 20px;
-  transition: all .3s; }
+  padding: 3px 10px;
+  transition: all .3s;
+  margin-left: 2px; }
 
 #boton-carrito:hover {
   cursor: pointer;
-  color: white;
-  background-color: royalblue; }
+  color: #dfdfdf;
+  background-color: #f1836a; }
 
 #boton-carrito:focus {
   outline: none; }
@@ -134,18 +169,30 @@ footer {
   box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3); }
 
 .precioProducto {
-  font-weight: 700; }
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center; }
 
 .boton-agregar {
-  background-color: royalblue;
+  background-color: #f24405;
+  border-radius: 5px;
   color: white;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 5px;
-  border: none; }
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .boton-agregar:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #f1836a;
+  transition: 0.5s; }
+
+.botones-carrito {
+  margin-top: 15px; }
 
 .boton-agregar:focus {
   outline: none; }
@@ -170,24 +217,30 @@ footer {
 .modal-carrito {
   position: relative;
   background-color: white;
-  min-width: 500px;
+  width: 550px;
   padding: 20px;
   margin-top: -100%;
-  transition: all .5s; }
+  transition: all .5s;
+  border-radius: 8px; }
 
 .modal-active .modal-carrito {
   margin-top: 0; }
 
 .modal-carrito h3 {
-  color: royalblue;
-  padding-bottom: 5px; }
+  color: #030f59;
+  font-weight: 800;
+  padding-bottom: 5px;
+  text-align: center; }
+
+.modal-carrito p {
+  margin-bottom: 0; }
 
 .modal-carrito #carritoCerrar {
   position: absolute;
   top: 15px;
   right: 15px;
   font-size: 20px;
-  color: royalblue;
+  color: #030f59;
   border: none;
   background-color: white; }
 
@@ -201,16 +254,17 @@ footer {
   padding-top: 10px; }
 
 .productoEnCarrito {
-  border-left: 5px solid lightblue;
+  border-left: 5px solid #2c3d73;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
   margin: 5px 0;
   padding: 5px 10px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .productoEnCarrito:hover {
-  border-left: 5px solid royalblue; }
+  border-left: 5px solid #030f59; }
 
 .boton-eliminar {
   background-color: white;

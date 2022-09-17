@@ -44,10 +44,6 @@
             </ul>
             <a class="navbar-brand"><img id="carrito" src="../src/img/carrito.png" alt="carrito"></a>
             <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
-            <form class="d-flex">
-              <input id="buscador" class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-              <button id="botonBusqueda" class="btn btn-outline-success" type="submit"><img src="../src/img/lupa.png" alt="" id="lupa"></button>
-            </form>
           </div>
         </div>
       </nav>
@@ -57,7 +53,6 @@
       <p class="categoria">Guitarras Eléctricas</p>
       <form class="formBusqueda">
         <input id="filtroGuitarra" class="form-control me-2" type="search" placeholder="Buscar guitarra..." aria-label="Search">
-        <button id="filtroLupa" class="btn btn-outline-success" type="submit"><img src="../src/img/lupa.png" alt="" id="lupa"></button>
       </form>
       <section id="productos">
         <div class="row">
@@ -67,20 +62,21 @@
             </div>
         </div>
       </section>
-      <section id="modal" class="modal-contenedor">
-        <div class="modal-carrito">
-            <h3>Carrito</h3>
-            <button id="carritoCerrar"><img src="../src/img/cerrarModal.png" class="cerrarModal" alt=""></button>
-            <div id="carrito-contenedor">
-            </div>
-            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
-            <div class="botones-carrito">
-              <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
-              <button id="finalizar-compra" class="boton-agregar">Finalizar compra</button>
-            </div>
-        </div>
-      </section>
     </div>
+
+    <section id="modal" class="modal-contenedor">
+      <div class="modal-carrito">
+          <h3>Mi compra:</h3>
+          <button id="carritoCerrar"><img src="../src/img/cerrarModal.png" class="cerrarModal" alt=""></button>
+          <div id="carrito-contenedor">
+          </div>
+          <p class="precioProducto">Total: $<span id="precioTotal">0</span></p>
+          <div class="botones-carrito">
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            <button id="finalizar-compra" class="boton-agregar">Finalizar compra</button>
+          </div>
+      </div>
+    </section>
 
     <footer class="py-5">
       <div id="conteinerFooter">

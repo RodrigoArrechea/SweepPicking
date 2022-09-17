@@ -1,16 +1,17 @@
 #boton-carrito {
     border: none;
-    color: royalblue;
-    font-size: 40px;
-    background-color: white;
+    color: #dfdfdf;
+    font-size: 14px;
+    background-color: #f24405;
     border-radius: 50%;
-    padding: 10px 20px;
+    padding: 3px 10px;
     transition: all .3s;
+    margin-left: 2px;
 }
 #boton-carrito:hover {
     cursor: pointer;
-    color: white;
-    background-color: royalblue;
+    color: #dfdfdf;
+    background-color: #f1836a;
 }
 #boton-carrito:focus {
     outline: none;
@@ -31,19 +32,34 @@
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
 }
 .precioProducto {
+    font-size: 20px;
     font-weight: 700;
+    text-align: center;
 }
 .boton-agregar {
-    background-color: royalblue;
+    background-color:#f24405;
+    border-radius: 5px;
     color: white;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 5px;
     border: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 .boton-agregar:hover {
     cursor: pointer;
+    background-color: #f1836a;
+    transition: 0.5s;
 }
+
+.botones-carrito{
+    margin-top: 15px;
+}
+
 .boton-agregar:focus {
     outline: none;
 }
@@ -70,10 +86,11 @@
 .modal-carrito {
     position: relative;
     background-color: white;
-    min-width: 500px;
+    width: 550px;
     padding: 20px;
     margin-top: -100%;
     transition: all .5s;
+    border-radius: 8px;
 }
 
 .modal-active .modal-carrito {
@@ -81,15 +98,22 @@
 }
 
 .modal-carrito h3 {
-    color: royalblue;
+    color: #030f59;
+    font-weight: 800;
     padding-bottom: 5px;
+    text-align: center;
 }
+
+.modal-carrito p {
+    margin-bottom: 0;
+}
+
 .modal-carrito #carritoCerrar {
     position: absolute;
     top: 15px;
     right: 15px;
     font-size: 20px;
-    color: royalblue;
+    color: #030f59;
     border: none;
     background-color: white;
 }
@@ -105,17 +129,18 @@
 }
 
 .productoEnCarrito {
-    border-left: 5px solid lightblue;
+    border-left: 5px solid #2c3d73;;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
     margin: 5px 0;
     padding: 5px 10px;
     display: flex;
     justify-content: space-between;
+    align-items:  center;
 }
 
 .productoEnCarrito:hover {
-    border-left: 5px solid royalblue;
+    border-left: 5px solid #030f59;
 }
 
 .boton-eliminar {
