@@ -82,6 +82,17 @@ body{
         margin-right: auto;
     }
 
+    #confimarCompra{
+        background-color: #f24405;
+        border-color: transparent;
+    }
+
+    #confimarCompra:hover{
+        background-color: #f1836a;
+        border-color: transparent;
+        transition: 0.5s;
+    }
+
     #contenedorOfertas, #contenedorElectricas, #contenedorAcusticas, #contenedorCriollas{
         display: flex;
         flex-wrap: wrap;

@@ -328,7 +328,7 @@ document.addEventListener("keyup", e => {
 
 
 
-// FORMULARIO SUBSCRIPCIÓN
+// FORMULARIO SUSCRIPCIÓN
   
 const form = document.querySelector('#formulario')
 const inputMail = document.querySelector('#newsletter1')
@@ -411,9 +411,8 @@ formCompra.addEventListener('submit', (event) => {
         'Nos comunicaremos vía email para coordinar pago y envío.',
         'success',
       )
-
+    
     localStorage.setItem("Compras", JSON.stringify(compras))
     
     formCompra.reset()
-    carrito.reset()
 })
