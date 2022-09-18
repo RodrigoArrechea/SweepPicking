@@ -116,6 +116,7 @@ const btnVaciarCarrito = document.querySelector("#vaciar-carrito")
 const btnFinalizarCompra = document.querySelector("#finalizar-compra")
 const contadorCarrito = document.querySelector('#contadorCarrito')
 const montoTotal = document.querySelector('#precioTotal')
+const contenedorCompra = document.querySelector("#compra-contenedor")
 
 // === STOCK TOTAL ===
 
@@ -356,7 +357,63 @@ form.addEventListener('submit', (event) => {
         'success',
       )
 
-    localStorage.setItem("Clientes", JSON.stringify(baseDeDatos))
+    localStorage.setItem("Suscriptores", JSON.stringify(baseDeDatos))
 
     form.reset()
+})
+
+
+
+// FORMULARIO DE COMPRA
+
+const formCompra = document.querySelector('#formCompra')
+const inputNombre = document.querySelector('#inputNombre')
+const inputoApellido = document.querySelector('#inputApellido')
+const inputEmail = document.querySelector('#inputEmail')
+const inputDireccion = document.querySelector('#inputDireccion')
+const inputLocalidad = document.querySelector('#inputCity')
+const inputPago = document.querySelector('#inputState')
+const inputCuotas = document.querySelector('#inputCuotas')
+
+const compras = []
+
+formCompra.addEventListener('submit', (event) => {
+    event.preventDefault()
+    
+    const nombre = inputNombre.value
+    const apellido = inputoApellido.value
+    const email = inputEmail.value
+    const direccion = inputDireccion.value
+    const localidad = inputLocalidad.value
+    const pago = inputPago.value
+    const cuotas = inputCuotas.value
+
+    if (nombre.length < 5 || apellido.length < 5 ||  email.length < 5 || direccion.length < 5 || localidad.length < 5) {
+    Swal.fire("Datos inválidos.")
+     return
+    }
+
+    const compra = {
+        productos: carrito,
+        nombre: nombre,
+        apellido: apellido,
+        email: email,
+        dirección: direccion,
+        localidad: localidad,
+        pago: pago,
+        cuotas: cuotas
+    }
+
+    compras.push(compra)
+
+    Swal.fire(
+        '¡Compra finalizada!',
+        'Nos comunicaremos vía email para coordinar pago y envío.',
+        'success',
+      )
+
+    localStorage.setItem("Compras", JSON.stringify(compras))
+    
+    formCompra.reset()
+    carrito.reset()
 })
