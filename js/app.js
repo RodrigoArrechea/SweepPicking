@@ -232,7 +232,7 @@ const renderCarrito = () => {
                     <p>${par.modelo}</p>
                     <p>Precio: $${par.precio}</p>
                     <p>Cantidad: ${par.cantidad}</p>
-                    <button onclick="eliminarGuitarra(${par.id})" class="boton-eliminar"><img src="./src/img/borrar.png" class="borrarGuitarra" alt=""></button>
+                    <button onclick="eliminarGuitarra(${par.id})" class="boton-eliminar"><img src="src/img/borrar.png" class="borrarGuitarra" alt=""></button>
         `
         contenedorCarrito.append(div)
     })
