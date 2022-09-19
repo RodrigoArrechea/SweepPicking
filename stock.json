@@ -1,7 +1,7 @@
 [{
     "id": 1,
     "categoria": "electrica",
-    "img": "src/img/1.jpg",
+    "img": "../src/img/1.jpg",
     "marca": "Gibson",
     "modelo": "Les Paul Tribute",
     "precio": 690400,
