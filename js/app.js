@@ -171,13 +171,9 @@ const eliminarGuitarra = (id) => {
 const ocultarBoton = () => {
     if (carrito.length === 0) {
         btnVaciarCarrito.style.display = "none"
-    } else {
-        btnVaciarCarrito.style.display = "block"
-    }
-
-    if (carrito.length === 0) {
         btnFinalizarCompra.style.display = "none"
     } else {
+        btnVaciarCarrito.style.display = "block"
         btnFinalizarCompra.style.display = "block"
     }
 }
